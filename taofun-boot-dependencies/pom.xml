@@ -24,8 +24,8 @@
         <java.version>1.8</java.version>
         <!-- spring-cloud-->
         <spring-cloud-alibaba-dependencies.version>2.2.0.RELEASE</spring-cloud-alibaba-dependencies.version>
-        <spring-boot-dependencies.version>2.3.0.RELEASE</spring-boot-dependencies.version>
-        <spring-cloud-dependencies.version>Hoxton.SR5</spring-cloud-dependencies.version>
+        <spring-boot-dependencies.version>2.3.2.RELEASE</spring-boot-dependencies.version>
+        <spring-cloud-dependencies.version>Hoxton.SR6</spring-cloud-dependencies.version>
         <spring-webmvc.version>5.2.6.RELEASE</spring-webmvc.version>
         <spring-boot-admin.version>2.2.3</spring-boot-admin.version>
         <spring.platform.version>Cairo-SR8</spring.platform.version>
@@ -103,16 +103,16 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud-dependencies.version}</version>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${spring-cloud-alibaba-dependencies.version}</version>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
