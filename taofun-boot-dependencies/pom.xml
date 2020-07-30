@@ -23,9 +23,9 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <!-- spring-cloud-->
-        <spring-cloud-alibaba-dependencies.version>2.2.0.RELEASE</spring-cloud-alibaba-dependencies.version>
-        <spring-boot-dependencies.version>2.1.13.RELEASE</spring-boot-dependencies.version>
-        <spring-cloud-dependencies.version>Greenwich.RELEASE</spring-cloud-dependencies.version>
+        <spring-cloud-alibaba-dependencies.version>2.2.1.RELEASE</spring-cloud-alibaba-dependencies.version>
+        <spring-boot-dependencies.version>2.2.5.RELEASE</spring-boot-dependencies.version>
+        <spring-cloud-dependencies.version>Hoxton.SR3</spring-cloud-dependencies.version>
         <spring-webmvc.version>5.2.6.RELEASE</spring-webmvc.version>
         <spring-boot-admin.version>2.2.3</spring-boot-admin.version>
         <spring.platform.version>Cairo-SR8</spring.platform.version>
@@ -61,6 +61,7 @@
         <spring-data-commos.version>2.2.6.RELEASE</spring-data-commos.version>
         <!-- jwt组件-->
         <jwt.version>8.16</jwt.version>
+        <jjwt.veersion>0.9.1</jjwt.veersion>
 
         <aliyun-sdk-oss.version>3.8.1</aliyun-sdk-oss.version>
         <!-- google-->
@@ -102,13 +103,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${spring-cloud-alibaba-dependencies.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -116,18 +111,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/com.alipay.sofa/sofaboot-dependencies -->
+            <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba-dependencies -->
             <dependency>
-                <groupId>com.alipay.sofa</groupId>
-                <artifactId>sofaboot-dependencies</artifactId>
-                <version>3.4.1</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.spring.platform</groupId>
-                <artifactId>platform-bom</artifactId>
-                <version>${spring.platform.version}</version>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -154,6 +142,11 @@
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>1.2.13</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>0.9.0</version>
             </dependency>
 
             <dependency>
