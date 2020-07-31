@@ -42,7 +42,7 @@
         <spring-boot-maven-plugin.version>2.3.0.RELEASE</spring-boot-maven-plugin.version>
         <knife4j.version>2.0.4</knife4j.version>
 
-        <druid.version>1.1.14</druid.version>
+        <druid.version>1.1.21</druid.version>
         <!-- datasource-->
         <mybatis-plus.version>3.3.2</mybatis-plus.version>
         <pagehelper-spring-boot-starter.version>1.2.13</pagehelper-spring-boot-starter.version>
